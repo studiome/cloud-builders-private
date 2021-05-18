@@ -5,4 +5,5 @@ RUN git clone https://github.com/flutter/flutter.git -b stable
 ENV PATH $PATH:/flutter/bin
 RUN flutter config --no-analytics
 RUN flutter upgrade
+RUN flutter doctor
 ENTRYPOINT ["flutter"]
